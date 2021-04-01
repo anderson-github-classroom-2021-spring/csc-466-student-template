@@ -1,1 +1,3 @@
-# csc-466-student-template# csc-466-student-template
+# Get your lab/assignment/chapter/etc
+
+I use naming conventions, so this is as easy as running ./get.py
