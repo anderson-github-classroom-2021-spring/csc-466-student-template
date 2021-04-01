@@ -7,13 +7,13 @@ import os
 student_repo_path="../csc-466-student/"
 if os.path.isdir(student_repo_path):
     print("Updating %s"%student_repo_path)
-    cmd = "cd %s && git pull"%student_repo_path
+    cmd = "cd %s && git pull"%student_repo_path 
     r = os.system(cmd)
     if r != 0:
         print("Command failed:",cmd)
         exit(1)
 else:
-    cmd = "cd .. && git clone https://github.com/anderson-github-classroom-2021-spring/csc-466-student.git && chmod -R ugo-w csc-466-student"
+    cmd = "cd .. && git clone https://github.com/anderson-github-classroom-2021-spring/csc-466-student.git"
     r = os.system(cmd)
     if r != 0:
         print("Command failed:",cmd)
